@@ -14,6 +14,7 @@ body.dark{
 .title{
     background: rgb(255,25,25);
     background: linear-gradient(90deg, rgba(255,25,25,1) 24%, rgba(235,148,47,1) 29%, rgba(235,242,57,1) 33%, rgba(174,233,59,1) 38%, rgba(59,233,167,1) 43%, rgba(59,150,233,1) 47%, rgba(231,59,233,1) 51%, rgba(233,59,156,1) 54%);
+    background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
     display: flex;
@@ -109,10 +110,27 @@ li ul li{
     gap: 20px;
 }
 
+@media (max-width: 976px) {
+    .container-all{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 671px) {
+    .container-all{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
 h3{
     color: #e8858e;
     background: rgb(255,25,25);
     background: linear-gradient(90deg, rgba(255,25,25,1) 0%, rgba(235,148,47,1) 13%, rgba(235,242,57,1) 27%, rgba(174,233,59,1) 43%, rgba(59,233,167,1) 56%, rgba(59,150,233,1) 69%, rgba(231,59,233,1) 81%, rgba(233,59,156,1) 91%);
+    background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
     margin-left: 60px;
